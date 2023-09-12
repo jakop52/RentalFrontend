@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary_day">#6A8CAF</color>
+    <color name="colorPrimaryDark_day">#4F6A8D</color>
+    <color name="colorAccent_day">#F2A365</color>
+    <color name="background_day">#FFFFFF</color>
+    <color name="textColorPrimary_day">#212121</color>
+    <color name="textColorSecondary_day">#616161</color>
+    <color name="notification_day">#FFEB3B</color>
+    <color name="progressBar_day">#81C784</color>
+
+    <color name="colorPrimary_night">#2A4058</color>
+    <color name="colorPrimaryDark_night">#1C2D3F</color>
+    <color name="colorAccent_night">#F28D35</color>
+    <color name="background_night">#121212</color>
+    <color name="textColorPrimary_night">#E0E0E0</color>
+    <color name="textColorSecondary_night">#B0B0B0</color>
+    <color name="notification_night">#FFC107</color>
+    <color name="progressBar_night">#4CAF50</color>
+
+    <color name="dot_selected">#555555</color>
+    <color name="dot_unselected">#CCCCCC</color>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ownedApartmentsFragment"
+        android:icon="@drawable/ic_owned"
+        android:title="Owned" />
+
+    <item
+        android:id="@+id/rentedApartmentsFragment"
+        android:icon="@drawable/ic_rented"
+        android:title="Rented" />
+
+    <item
+        android:id="@+id/searchApartmentFragment"
+        android:icon="@drawable/ic_search"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile" />
+
+</menu>

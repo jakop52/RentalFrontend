@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Pole do wybierania startDate -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select start date"
+                android:clickable="true"
+                android:focusable="false" />
+
+            <DatePicker
+                android:id="@+id/datePickerStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:datePickerStyle="@style/DatePickerStyle"/>
+
+            <!-- Pole do wybierania endDate -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="End Date (Optional)"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select end date"
+                android:clickable="true"
+                android:focusable="false" />
+
+            <DatePicker
+                android:id="@+id/datePickerEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:datePickerStyle="@style/DatePickerStyle"/>
+
+            <!-- Pole do wprowadzania kwoty -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Amount"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+
+            <!-- Pole lub lista do wyboru paymentPeriod -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Payment Period"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerPaymentPeriod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/payment_periods" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Przyciski na samym dole ekranu -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <!-- Przycisk cancel -->
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_marginHorizontal="20dp"/>
+
+        <!-- Przycisk sendRentRequest -->
+        <Button
+            android:id="@+id/buttonSendRentRequest"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Send Rent Request" />
+
+    </LinearLayout>
+</LinearLayout>
